@@ -1,13 +1,13 @@
-const h1 = document.querySelector("#h");
+// const h1 = document.querySelector("#h");
 
-function changecolor(color,time){
-    return new Promise((res,rej) => {
-        setTimeout(() => {
-        h1.style.color = color;
-        res();
-    },time);
-    })
-}
+// function changecolor(color,time){
+//     return new Promise((res,rej) => {
+//         setTimeout(() => {
+//         h1.style.color = color;
+//         res();
+//     },time);
+//     })
+// }
 
 // changecolor("blue" , 2000 , () => {
 //     changecolor("green" , 2000 , () => {
@@ -29,12 +29,12 @@ function changecolor(color,time){
 // })
 
 
-async function changecolor2() {
-    await changecolor("red" , 2000);
-    await changecolor("blue" , 2000);
-    await changecolor("green" , 2000);
-    await changecolor("black" , 2000);
-    await changecolor("pink" , 2000);
-    await changecolor("red" , 2000);
-}
-changecolor2()
+// async function changecolor2() {
+//     await changecolor("red" , 2000);
+//     await changecolor("blue" , 2000);
+//     await changecolor("green" , 2000);
+//     await changecolor("black" , 2000);
+//     await changecolor("pink" , 2000);
+//     await changecolor("red" , 2000);
+// }
+// changecolor2()
