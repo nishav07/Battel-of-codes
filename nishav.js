@@ -1,6 +1,5 @@
 const h1 = document.querySelector("#h");
 
-
 function changecolor(color,time){
     return new Promise((res,rej) => {
         setTimeout(() => {
