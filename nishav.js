@@ -20,11 +20,13 @@ function changecolor(color,time){
 //     })
 // })
 
-changecolor('red' , 2000)
-.then(() => changecolor("blue" , 2000))
-.then(() => changecolor("pink" , 2000))
-.then(() => changecolor("green" , 2000))
-.then(() => changecolor("black" , 2000))
-.catch((err) => {
-    console.log(err);
-})
+// changecolor('red' , 2000)
+// .then(() => changecolor("blue" , 2000))
+// .then(() => changecolor("pink" , 2000))
+// .then(() => changecolor("green" , 2000))
+// .then(() => changecolor("black" , 2000))
+// .catch((err) => {
+//     console.log(err);
+// })
+
+
