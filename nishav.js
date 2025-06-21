@@ -30,3 +30,12 @@ function changecolor(color,time){
 // })
 
 
+async function changecolor2() {
+    await changecolor("red" , 2000);
+    await changecolor("blue" , 2000);
+    await changecolor("green" , 2000);
+    await changecolor("black" , 2000);
+    await changecolor("pink" , 2000);
+    await changecolor("red" , 2000);
+}
+changecolor2()
