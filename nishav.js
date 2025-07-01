@@ -38,18 +38,31 @@
 //     await changecolor("red" , 2000);
 // }
 // changecolor2()
+let ul = document.getElementById("ul");
+let btn = document.getElementById("G").addEventListener("click" , () => {
+    coolors();
+})
 
 
-async function coolors (theme){
+async function coolors (){
     try{
-    let url = `https://www.thecolorapi.com/scheme?hex=0047AB&mode=${theme}`;
+    let inval = document.getElementById("input").value;
+    let url = `https://www.thecolorapi.com/scheme?hex=0047AB&mode=${inval}`;
     const res =  await fetch(url);
     const data = await res.json();
-    console.log(data);
+    console.log(data.colors[0].hex.value);
+    let colorArr = data.colors;
+    console.log(colorArr)
+    colorArr.forEach(e => {
+        let li = document.createElement("li");
+        li.innerText = e.hex.value;
+        ul.appendChild(li);
+        console.log(e.hex.value)
+    });
 
     } catch(err){
         console.log(`err is ${err}`)
     }
 }
 
-coolors("monochrome");
+
