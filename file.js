@@ -10,8 +10,4 @@
 // showdata()
 
 
-async function coolors (theme){
-    const res =  fetch(`https://colormagic.app/api/palette/search?q=${theme}`);
-    const data = await res.json();
-    console.log(data);
-}
+

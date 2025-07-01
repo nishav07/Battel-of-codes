@@ -38,3 +38,18 @@
 //     await changecolor("red" , 2000);
 // }
 // changecolor2()
+
+
+async function coolors (theme){
+    try{
+    let url = `https://www.thecolorapi.com/scheme?hex=0047AB&mode=${theme}`;
+    const res =  await fetch(url);
+    const data = await res.json();
+    console.log(data);
+
+    } catch(err){
+        console.log(`err is ${err}`)
+    }
+}
+
+coolors("monochrome");
