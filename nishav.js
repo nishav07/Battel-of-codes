@@ -117,12 +117,30 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // let newarr = lang.push("react");return total index and chnage the real array by adding at last
 // let newarr = lang.pop();return that last deleted index value and chnage the real array
 // let newarr = lang.slice(0 , 6);it return a piece of an array without chnaging real one and inclding last index
- let newarr = lang.splice(1,2,"typescript"); 
-// it return the previous index values and the chnage the orignal array ;
-console.log(lang);
-console.log(newarr);
+//  let newarr = lang.splice(0,4,"typescript"); // it return the previous index values and the chnage the orignal array and this workd from starting index to deleted count not index count;
 
 
+// console.log(lang);
+// console.log(newarr);
+
+
+fetch("https://api.adviceslip.com/advice")
+.then(res => res.json())
+.then(data => console.log(data.slip.advice))
+.catch(err => console.log(`err ${err}`))
+
+
+const advice = async () => {
+   try{
+    let res = await fetch(`https://api.adviceslip.com/advice`)
+    let data = await res.json();
+    console.log(data);
+   } catch (err){
+    console.log(`err` , err)
+   }
+}
+
+advice();
 
 
 
