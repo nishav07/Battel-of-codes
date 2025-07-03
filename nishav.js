@@ -66,3 +66,7 @@ async function coolors (){
 }
 
 
+async function data(name){
+    
+}
+
