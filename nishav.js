@@ -82,3 +82,40 @@ async function coolors (){
 
 // giveData();
 
+// fetch('https://randomuser.me/api/')
+// .then((res) => {
+//     let response = res.json()
+//     return response
+// })
+// .then((data) => {
+//     console.log(data);
+// })
+// .catch((err) => {
+//     console.log(`err = ${err}`);
+// })
+
+
+// fetch(`https://api.adviceslip.com/advice`)
+// .then(res => { let response = res.json(); return response})
+// .then(data => { console.log(data)})
+// .catch(err => {console.log(err)})
+
+
+// async function advice (){
+//     let res = await fetch(`https://api.adviceslip.com/advice`);
+//     let data = await res.json();
+//     console.log(data)
+// }
+
+// advice();
+
+
+
+
+
+
+
+
+
+
+
