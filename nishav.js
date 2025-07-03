@@ -110,7 +110,17 @@ async function coolors (){
 // advice();
 
 
+let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "rust" ,"SQL" , "binary"]
 
+// let newarr = lang.unshift('js') return total index and chnage the real array by adding at first
+// let newarr = lang.shift(); return that first deleted index value and chnage the real array
+// let newarr = lang.push("react");return total index and chnage the real array by adding at last
+// let newarr = lang.pop();return that last deleted index value and chnage the real array
+// let newarr = lang.slice(0 , 6);it return a piece of an array without chnaging real one and inclding last index
+ let newarr = lang.splice(1,2,"typescript"); 
+// it return the previous index values and the chnage the orignal array ;
+console.log(lang);
+console.log(newarr);
 
 
 
