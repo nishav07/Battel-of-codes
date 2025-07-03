@@ -66,7 +66,19 @@ async function coolors (){
 }
 
 
-async function data(name){
-    
-}
+// async function giveData(){
+//     let res = await fetch('https://randomuser.me/api/');
+//     let data = await res.json();
+//     console.log(res)
+//     console.log(data);
+//     let first = data.results[0].name.first;
+//     let last = data.results[0].name.last;
+
+//     userdata = {
+//         name:first + last
+//     }
+//     console.log(userdata);
+// }
+
+// giveData();
 
