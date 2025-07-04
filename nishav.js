@@ -143,7 +143,20 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // advice();
 
 
+// fetch('https://api.adviceslip.com/advice')
+// .then(res => response = res.json())
+// .then(data => console.log(`data = `,data))
+// .catch(err => console.log(err))
 
+// const getAdvice = async() => {
+//     try{
+//         const response = await fetch(`https://api.adviceslip.com/advice`);
+//         const data = await response.json();
+//         console.log(`data`,data)
+//     } catch(err){
+//         console.log(err)
+//     }
+// }
 
-
+// getAdvice()
 
