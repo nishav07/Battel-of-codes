@@ -124,23 +124,23 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // console.log(newarr);
 
 
-fetch("https://api.adviceslip.com/advice")
-.then(res => res.json())
-.then(data => console.log(data.slip.advice))
-.catch(err => console.log(`err ${err}`))
+// fetch("https://api.adviceslip.com/advice")
+// .then(res => res.json())
+// .then(data => console.log(data.slip.advice))
+// .catch(err => console.log(`err ${err}`))
 
 
-const advice = async () => {
-   try{
-    let res = await fetch(`https://api.adviceslip.com/advice`)
-    let data = await res.json();
-    console.log(data);
-   } catch (err){
-    console.log(`err` , err)
-   }
-}
+// const advice = async () => {
+//    try{
+//     let res = await fetch(`https://api.adviceslip.com/advice`)
+//     let data = await res.json();
+//     console.log(data);
+//    } catch (err){
+//     console.log(`err` , err)
+//    }
+// }
 
-advice();
+// advice();
 
 
 
