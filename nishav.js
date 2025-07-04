@@ -235,3 +235,37 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // 3. Replace the 3rd batch with ["wallet"]
 // 4. Add ["bottle"] as a new batch at the start.
 // 5. Print the final batch list
+
+
+//--------leet code hard level Q1 by chatgpt for logic building 
+let arr = [
+    ["shoes", "socks"],//0
+    ["cap"],//1
+    ["bag", "belt"],//2
+    ["pen"],//3
+    ["shoes", "socks", "hat"],//4
+    ["book"],//5
+    ["pen", "notebook"],//6
+    ["cap", "gloves"],//7
+    ["socks"],//8
+    ["hat", "shoes"]//9
+]
+
+let shoes = 0;
+
+arr.splice(8,2)
+arr[4].pop();
+arr.splice(2,1,['wallet'])
+arr.unshift(["bottle"])
+console.log(arr)
+
+arr.forEach((value) => {
+    value.forEach((val) => {
+        console.log(val)//nested for each.. use krkke majaaj aagya 
+        if(val === "shoes"){
+            shoes++;
+        }
+    })
+})
+
+console.log(shoes)
