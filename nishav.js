@@ -237,35 +237,69 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // 5. Print the final batch list
 
 
-//--------leet code hard level Q1 by chatgpt for logic building 
-let arr = [
-    ["shoes", "socks"],//0
-    ["cap"],//1
-    ["bag", "belt"],//2
-    ["pen"],//3
-    ["shoes", "socks", "hat"],//4
-    ["book"],//5
-    ["pen", "notebook"],//6
-    ["cap", "gloves"],//7
-    ["socks"],//8
-    ["hat", "shoes"]//9
-]
+// //--------leet code hard level Q1 by chatgpt for logic building 
+// let arr = [
+//     ["shoes", "socks"],//0
+//     ["cap"],//1
+//     ["bag", "belt"],//2
+//     ["pen"],//3
+//     ["shoes", "socks", "hat"],//4
+//     ["book"],//5
+//     ["pen", "notebook"],//6
+//     ["cap", "gloves"],//7
+//     ["socks"],//8
+//     ["hat", "shoes"]//9
+// ]
 
-let shoes = 0;
+// let shoes = 0;
 
-arr.splice(8,2)
-arr[4].pop();
-arr.splice(2,1,['wallet'])
-arr.unshift(["bottle"])
-console.log(arr)
+// arr.splice(8,2)
+// arr[4].pop();
+// arr.splice(2,1,['wallet'])
+// arr.unshift(["bottle"])
+// console.log(arr)
 
-arr.forEach((value) => {
-    value.forEach((val) => {
-        console.log(val)//nested for each.. use krkke majaaj aagya 
-        if(val === "shoes"){
-            shoes++;
-        }
-    })
-})
+// arr.forEach((value) => {
+//     value.forEach((val) => {
+//         console.log(val)//nested for each.. use krkke majaaj aagya 
+//         if(val === "shoes"){
+//             shoes++;
+//         }
+//     })
+// })
 
-console.log(shoes)
+// console.log(shoes)
+
+// let price = [199, 349, 499, 599];
+
+// let disPrice = price.map((p) => {
+//     return Number(p) - 50;
+// })
+
+// console.log(disPrice); //(4) [149, 299, 449, 549]
+
+// //q2
+
+// let naam = ["Ravi", "Neha", "Aman"];
+
+// let newFormat = naam.map((item) => {
+//     return item = `Student:${item}`;
+// })
+
+// console.log(newFormat);
+
+// let number = [2,45,6,7,8,4,35,6,4,56,];
+
+// let even = number.filter((num) => {
+//     return num % 2 === 0;
+// })
+
+// let odd = number.filter((num) => {
+//     return num % 2 != 0;
+// })
+// console.log(even);
+// console.log(odd);
+
+//question 1
+let arr = [88, 32, 67, 45, 91, 38, 76];
+
