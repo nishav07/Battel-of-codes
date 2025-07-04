@@ -160,3 +160,78 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 
 // getAdvice()
 
+//---------------question 2--------------------------------------------------------------------------------------
+// let cart = [
+//   ["apple", "banana", "mango"],
+//   ["bread", "butter"],
+//   ["pen", "notebook", "eraser", "scale"],
+//   ["kurkure"]
+// ];
+
+
+// cart[1].unshift("milk")
+
+// console.log(cart)
+
+//-----------------------question 3-------------------------------------------------------------------------------
+// let cart = [
+//     ["apple", "banana", "mango"],
+//     ["bread", "butter"],
+//     ["pen", "notebook", "eraser", "scale"],
+//     ["kurkure"]
+// ];
+
+// cart[2].splice(2,2)
+
+// console.log(cart);
+
+//----------------questionn 4------------------------------------------------------------------------------------
+
+// let cart = [
+//     ["apple", "banana", "mango"],
+//     ["bread", "butter"],
+//     ["pen", "notebook", "eraser", "scale"],
+//     ["kurkure"]
+// ];
+
+// cart[3].splice(0,1,"chips ", "cooke ")
+// console.log(cart);
+
+//--------------------------------------solving leet code from easy to hard -------------------------------------
+// You have a queue of students waiting in line:
+// ["Ravi", "Neha", "Sohan"]
+
+// 1. Add "Priya" to the front of the queue.
+// 2. Remove the last student from the queue.
+// 3. Add "Aman" at the end of the queue.
+// 4. Remove the 2nd student in the queue (index 1).
+// 5. Print the final queue.
+
+// let arr = ["Ravi", "Neha", "Sohan"];
+
+// arr.unshift("priya");
+// arr.pop();
+// arr.push("aman");
+// arr.splice(1,1)//ravi gya 
+// console.log(arr)
+
+//-------------------------------------------------------------------------------------------------
+// You receive a list of 10 batches of products in the format:
+// [
+//   ["shoes", "socks"],
+//   ["cap"],
+//   ["bag", "belt"],
+//   ["pen"],
+//   ["shoes", "socks", "hat"],
+//   ["book"],
+//   ["pen", "notebook"],
+//   ["cap", "gloves"],
+//   ["socks"],
+//   ["hat", "shoes"]
+// ]
+
+// 1. Remove the last 2 batches.
+// 2. In the 5th batch, remove "hat".
+// 3. Replace the 3rd batch with ["wallet"]
+// 4. Add ["bottle"] as a new batch at the start.
+// 5. Print the final batch list
