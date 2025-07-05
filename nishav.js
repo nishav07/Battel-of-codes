@@ -399,6 +399,7 @@ async function Product (){
     })
     console.log("mens category product" , mens);
 
+    //Q3E
     console.log("filter arr" , filterArr)
     filterArr.push({
         category:"electronics",
@@ -408,10 +409,39 @@ async function Product (){
     })
     console.log(filterArr);
 
-    
+    //Q3f
+    filterArr.shift();
+
+    //Q3g
+    filterArr.splice(1,1,{
+        category:"On sale products",
+        discription:"fixes rate at 30 without any hiddent shit",
+        id:169,
+        price:30
+    })
+
+    //Q3h
+    filterArr.pop();
+    filterArr.pop();
+
+    //Q3i accoridng to question iiahve to slice 3 but now  only oen item is available in teh iflterarr so i splice random 3 from main apis resposne
+
+    const generatenum = () => {
+        let randomNumber = Math.floor(Math.random() * 20);
+        return randomNumber
+    }
+
+    console.log(filterArr);
+    let idx = generatenum();
+    let first = data.splice(idx, Number(idx) + 1)//iye fail ho gya waise i know iski jarurat nhi thi but revision hi to hai to or kuch revise krk liye
+    console.log(first);
+    let featured = []
+
+    console.log(featured);
    } catch (err){
     throw err
    }
 }
+
 
 Product();
