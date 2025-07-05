@@ -399,7 +399,16 @@ async function Product (){
     })
     console.log("mens category product" , mens);
 
+    console.log("filter arr" , filterArr)
+    filterArr.push({
+        category:"electronics",
+        discription:"none",
+        id:69,
+        price:999
+    })
+    console.log(filterArr);
 
+    
    } catch (err){
     throw err
    }
