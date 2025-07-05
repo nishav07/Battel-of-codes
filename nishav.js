@@ -334,4 +334,75 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // })
 
 // console.log(notearr)
-//---------------------------------------------------------------------------------------------------------
+//-------------------------LEET code questions-------------------------------------------------------------------
+// 🧩 Problem: SuperStore Order Management System
+
+// 1. Fetch dummy product data from this API:
+// https://fakestoreapi.com/products
+
+// 2. From the fetched data:
+//   a) Keep only those products that cost more than ₹500 
+//   b) Convert all product titles to uppercase
+//   c) Find the first product in category "electronics" 
+//   d) Count total number of products in category "men's clothing" (forEach + manual counter)
+
+// 3. On the filtered array:
+//   e) Add a dummy product at the end (push)
+//   f) Remove the first product (shift)
+//   g) Insert a special sale item at the second position (splice)
+//   h) Remove last 2 products just before checkout (pop x 2)
+
+// 4. After operations:
+//   i) Slice out top 3 items as "featured products" (slice)
+//   j) Print original filtered array after all updates
+
+// 🔒 Rules:
+// - Use only the methods you’ve learned: no `reduce`, `some`, etc.
+// - Use comments to separate steps
+// - No need to show HTML, pure JS code
+
+// 🔁 Bonus: Try to use async/await style for fetching
+
+//------------LEET code final hard questions------------------------------------------------------------
+async function Product (){
+   try{
+    let res = await fetch('https://fakestoreapi.com/products');
+    let data = await res.json();
+    console.log(data)
+
+    //question 2a
+    let filterArr = data.filter((e) => {
+        return e.price > 500
+    })
+    console.log("more than 500",filterArr)
+
+    //question 2b
+    let UpperCase = data.map((e) => {
+        return e.title.toUpperCase();
+    })
+
+    console.log("upper case" , UpperCase);
+
+    //question 2c
+    let electronics = data.find((e) => {
+        return e.category === "electronics";
+    })
+
+    console.log(`electronics` , electronics)
+
+    //question 2d
+    let mens = 0;
+    let mensCategory = data.forEach((e) => {
+        if(e.category === "men's clothing"){
+            mens++;
+        }
+    })
+    console.log("mens category product" , mens);
+
+
+   } catch (err){
+    throw err
+   }
+}
+
+Product();
