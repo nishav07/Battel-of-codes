@@ -300,6 +300,37 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // console.log(even);
 // console.log(odd);
 
-//question 1
-let arr = [88, 32, 67, 45, 91, 38, 76];
+// //question 1
+// let marks = [88, 32, 67, 45, 91, 38, 76];
 
+// let passStu = marks.filter((m) => {
+//     return m >= 50;
+// })
+
+// console.log(passStu);
+
+// //question 2
+
+// let prices = [1200, 499, 799, 1500, 300];
+
+// let high = prices.filter((p) => {
+//     return p > 800;
+// })
+
+// console.log(high);
+
+//---------leet code type question for find method-------------------------------
+let shelves = [
+  ["pen", "pencil", "eraser"],
+  ["scale", "notebook", "marker"],
+  ["tape", "glue", "sharpener"],
+  ["pencil box", "duster"]
+];
+
+let notearr = shelves.find((i) => {
+    return i.find((i) => {
+        return i === "notebook";
+    })
+})
+
+console.log(notearr)
