@@ -320,17 +320,18 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // console.log(high);
 
 //---------leet code type question for find method-------------------------------
-let shelves = [
-  ["pen", "pencil", "eraser"],
-  ["scale", "notebook", "marker"],
-  ["tape", "glue", "sharpener"],
-  ["pencil box", "duster"]
-];
+// let shelves = [
+//   ["pen", "pencil", "eraser"],
+//   ["scale", "notebook", "marker"],
+//   ["tape", "glue", "sharpener"],
+//   ["pencil box", "duster"]
+// ];
 
-let notearr = shelves.find((i) => {
-    return i.find((i) => {
-        return i === "notebook";
-    })
-})
+// let notearr = shelves.find((i) => {
+//     return i.find((i) => {
+//         return i === "notebook";
+//     })
+// })
 
-console.log(notearr)
+// console.log(notearr)
+//---------------------------------------------------------------------------------------------------------
