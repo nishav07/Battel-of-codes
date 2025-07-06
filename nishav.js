@@ -447,3 +447,15 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 
 
 // Product();
+
+//-----------------------more array methdos practice or maybe you cana say revision----------------------
+
+let arr = ["dog","cat","lion",["girrafe" , "zebra" , ["mouse" , "rat"]],"horse"];
+let newarr = [...arr];
+
+let flatmaparr = arr.flatMap((x) => {
+    return x + "hi"
+})
+console.log(newarr)
+console.log(arr)
+console.log(flatmaparr)
