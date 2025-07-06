@@ -364,59 +364,59 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // 🔁 Bonus: Try to use async/await style for fetching
 
 //------------LEET code final hard questions------------------------------------------------------------
-async function Product (){
-   try{
-    let res = await fetch('https://fakestoreapi.com/products');
-    let data = await res.json();
+// async function Product (){
+//    try{
+//     let res = await fetch('https://fakestoreapi.com/products');
+//     let data = await res.json();
 
     //question 2a
-    let filterArr = data.filter((e) => {
-        return e.price > 500
-    })
+    // let filterArr = data.filter((e) => {
+    //     return e.price > 500
+    // })
 
 
-    //question 2b
-    let UpperCase = data.map((e) => {
-        return e.title.toUpperCase();
-    })
+    // //question 2b
+    // let UpperCase = data.map((e) => {
+    //     return e.title.toUpperCase();
+    // })
 
 
-    //question 2c
-    let electronics = data.find((e) => {
-        return e.category === "electronics";
-    })
+    // //question 2c
+    // let electronics = data.find((e) => {
+    //     return e.category === "electronics";
+    // })
 
 
-    //question 2d
-    let mens = 0;
-    let mensCategory = data.forEach((e) => {
-        if(e.category === "men's clothing"){
-            mens++;
-        }
-    })
+    // //question 2d
+    // let mens = 0;
+    // let mensCategory = data.forEach((e) => {
+    //     if(e.category === "men's clothing"){
+    //         mens++;
+    //     }
+    // })
 
-    //Q3E
-    filterArr.push({
-        category:"electronics",
-        discription:"none",
-        id:69,
-        price:999
-    })
+    // //Q3E
+    // filterArr.push({
+    //     category:"electronics",
+    //     discription:"none",
+    //     id:69,
+    //     price:999
+    // })
 
-    //Q3f
-    filterArr.shift();
+    // //Q3f
+    // filterArr.shift();
 
-    //Q3g
-    filterArr.splice(1,1,{
-        category:"On sale products",
-        discription:"fixes rate at 30 without any hiddent shit",
-        id:169,
-        price:30
-    })
+    // //Q3g
+    // filterArr.splice(1,1,{
+    //     category:"On sale products",
+    //     discription:"fixes rate at 30 without any hiddent shit",
+    //     id:169,
+    //     price:30
+    // })
 
-    //Q3h
-    filterArr.pop();
-    filterArr.pop();
+    // //Q3h
+    // filterArr.pop();
+    // filterArr.pop();
 
     //Q3i accoridng to question iiahve to slice 3 but now  only oen item is available in teh iflterarr so i splice random 3 from main apis resposne
 
@@ -433,17 +433,17 @@ async function Product (){
 
     // console.log(featured);
    //q3i
-   let featuredProducts =  data.slice(4,7);
+//    let featuredProducts =  data.slice(4,7);
 
-   //Q3j
-   console.log(data);
-   console.log(filterArr)
-
-
-   } catch (err){
-    throw err
-   }
-}
+//    //Q3j
+//    console.log(data);
+//    console.log(filterArr)
 
 
-Product();
+//    } catch (err){
+//     throw err
+//    }
+// }
+
+
+// Product();
