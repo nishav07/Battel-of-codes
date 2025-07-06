@@ -450,12 +450,31 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 
 //-----------------------more array methdos practice or maybe you cana say revision----------------------
 
-let arr = ["dog","cat","lion",["girrafe" , "zebra" , ["mouse" , "rat"]],"horse"];
-let newarr = [...arr];
+// let arr = ["dog","cat","lion",["girrafe" , "zebra" , ["mouse" , "rat"]],"horse"];
+// let newarr = [...arr];
+// console.log(newarr)
+// console.log(arr)
+// console.log(flatmaparr)
 
-let flatmaparr = arr.flatMap((x) => {
-    return x + "hi"
-})
-console.log(newarr)
-console.log(arr)
-console.log(flatmaparr)
+
+// let arr2 = [2,3,4,[8,9,5],6,7,8,[1,2]]
+// let flattmap = arr2.flatMap((x) => {
+//     return [x,x*2]
+// })
+
+// console.log(flattmap);
+
+// const users = [
+//   { name: "Ram", hobbies: ["Cricket", "Reading"] },
+//   { name: "Shyam", hobbies: ["Gaming"] },
+//   { name: "Geeta", hobbies: ["Singing", "Dancing", "Painting"] },
+// ];
+
+// let fl = users.flatMap((user) => {
+//     return user.hobbies.map((x) => {
+//         return `${user.name} - ${x}`
+//     })
+// })
+
+// console.log(fl)
+
