@@ -368,27 +368,24 @@ async function Product (){
    try{
     let res = await fetch('https://fakestoreapi.com/products');
     let data = await res.json();
-    console.log(data)
 
     //question 2a
     let filterArr = data.filter((e) => {
         return e.price > 500
     })
-    console.log("more than 500",filterArr)
+
 
     //question 2b
     let UpperCase = data.map((e) => {
         return e.title.toUpperCase();
     })
 
-    console.log("upper case" , UpperCase);
 
     //question 2c
     let electronics = data.find((e) => {
         return e.category === "electronics";
     })
 
-    console.log(`electronics` , electronics)
 
     //question 2d
     let mens = 0;
@@ -397,17 +394,14 @@ async function Product (){
             mens++;
         }
     })
-    console.log("mens category product" , mens);
 
     //Q3E
-    console.log("filter arr" , filterArr)
     filterArr.push({
         category:"electronics",
         discription:"none",
         id:69,
         price:999
     })
-    console.log(filterArr);
 
     //Q3f
     filterArr.shift();
@@ -426,18 +420,26 @@ async function Product (){
 
     //Q3i accoridng to question iiahve to slice 3 but now  only oen item is available in teh iflterarr so i splice random 3 from main apis resposne
 
-    const generatenum = () => {
-        let randomNumber = Math.floor(Math.random() * 20);
-        return randomNumber
-    }
+    // const generatenum = () => {
+    //     let randomNumber = Math.floor(Math.random() * 20);
+    //     return randomNumber
+    // }
 
-    console.log(filterArr);
-    let idx = generatenum();
-    let first = data.splice(idx, Number(idx) + 1)//iye fail ho gya waise i know iski jarurat nhi thi but revision hi to hai to or kuch revise krk liye
-    console.log(first);
-    let featured = []
+    // console.log(filterArr);
+    // let idx = generatenum();
+    // let first = data.splice(idx, Number(idx) + 1)//iye fail ho gya waise i know iski jarurat nhi thi but revision hi to hai to or kuch revise krk liye
+    // console.log(first);
+    // let featured = []
 
-    console.log(featured);
+    // console.log(featured);
+   //q3i
+   let featuredProducts =  data.slice(4,7);
+
+   //Q3j
+   console.log(data);
+   console.log(filterArr)
+
+
    } catch (err){
     throw err
    }
