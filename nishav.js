@@ -486,14 +486,30 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 
 // console.log(summ)
 
+//////////////////////////OOPPPPPPPPSSS///////////////////////////////////////////////////////////////
+//old style factriy function
+// function person(name,age){
+//     this.name = name;
+//     this.age = age;
+//     this.hi = function(){
+//         console.log(`hi i am ${this.name} and i am ${this.age} year old`)
+//     }
+// }
 
+// let p1 = new person("nishav" , 19)
+// p1.hi();
 
-function person(name,age){
-    this.name = name;
-    this.age = age;
-    this.hi = function(){
-        console.log(`hi i am ${this.name} and i am ${this.age} year old`)
+//new style factory funnx
+class cars {
+    constructor(brand,model,year){
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+    }
+    details(){
+        console.log(`this is a ${this.brand} ${this.model} from ${this.year}`);
     }
 }
 
-let p1 = person("nishav" , 19)
+const p1 = new cars;
+p1.details()
