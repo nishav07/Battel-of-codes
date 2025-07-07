@@ -487,3 +487,13 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // console.log(summ)
 
 
+
+function person(name,age){
+    this.name = name;
+    this.age = age;
+    this.hi = function(){
+        console.log(`hi i am ${this.name} and i am ${this.age} year old`)
+    }
+}
+
+let p1 = person("nishav" , 19)
