@@ -515,4 +515,13 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // p1.details()
 
 //--------------------------revising concepts-------------------------------
+class Cars{
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
 
+    sayhi(){
+        console.log(`hi my name is ${this.name} and my age is ${this.age}`);
+    }
+}
