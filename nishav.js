@@ -515,7 +515,7 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // p1.details()
 
 //--------------------------revising concepts-------------------------------
-class Cars{
+class person{
     constructor(name,age){
         this.name = name;
         this.age = age;
@@ -525,3 +525,7 @@ class Cars{
         console.log(`hi my name is ${this.name} and my age is ${this.age}`);
     }
 }
+
+
+let p1 = new person("rishav" , 20);
+p1.sayhi();
