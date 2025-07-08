@@ -529,3 +529,11 @@ class person{
 
 let p1 = new person("rishav" , 20);
 p1.sayhi();
+
+class person2 extends person{
+    super 
+}
+
+let newp = new person2("nishav",18)
+
+newp.sayhi()
