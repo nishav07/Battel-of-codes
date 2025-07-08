@@ -500,16 +500,19 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // p1.hi();
 
 //new style factory funnx
-class Cars {
-    constructor(brand,model,year){
-        this.brand = brand;
-        this.model = model;
-        this.year = year;
-    }
-    details(){
-        console.log(`this is a ${this.brand} ${this.model} from ${this.year}`);
-    }
-}
+// class Cars {
+//     constructor(brand,model,year){
+//         this.brand = brand;
+//         this.model = model;
+//         this.year = year;
+//     }
+//     details(){
+//         console.log(`this is a ${this.brand} ${this.model} from ${this.year}`);
+//     }
+// }
 
-const p1 = new Cars("maruti suzuki" , "Wagon R" , 2006);
-p1.details()
+// const p1 = new Cars("maruti suzuki" , "Wagon R" , 2006);
+// p1.details()
+
+//--------------------------revising concepts-------------------------------
+
