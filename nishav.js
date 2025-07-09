@@ -546,4 +546,5 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // newp.sayhi()
 // newp.hobby()
 
-//---------------------
+//--------------------- new OOPPs fnx--------------------------------------------
+
