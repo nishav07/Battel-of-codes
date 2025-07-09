@@ -548,3 +548,33 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 
 //--------------------- new OOPPs fnx--------------------------------------------
 
+class cricket{
+    constructor(over,format,jersey){
+        this.over = over;
+        this.format = format;
+        this.jersey = jersey;
+    }
+
+    aboutme(){
+        console.log(`${this.format} is a ${this.over} over's game which is played in ${this.jersey} jersey`)
+    }
+}
+
+let  odi = new cricket(50,"odi","blue");
+
+odi.aboutme();
+
+class gully extends cricket{
+    constructor(over,format,jersey,rule){
+        super(over,format,jersey);
+        this.rule = rule;
+
+    }
+
+    gullyrule(){
+        this.aboutme()
+        console.log(`we have sepecial rules like ${this.rule}`);
+    }
+}
+
+let newcric = gull
