@@ -515,25 +515,35 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // p1.details()
 
 //--------------------------revising concepts-------------------------------
-class person{
-    constructor(name,age){
-        this.name = name;
-        this.age = age;
-    }
+// class person{
+//     constructor(name,age){
+//         this.name = name;
+//         this.age = age;
+//     }
 
-    sayhi(){
-        console.log(`hi my name is ${this.name} and my age is ${this.age}`);
-    }
-}
+//     sayhi(){
+//         console.log(`hi my name is ${this.name} and my age is ${this.age}`);
+//     }
+// }
 
 
-let p1 = new person("rishav" , 20);
-p1.sayhi();
+// let p1 = new person("rishav" , 20);
+// p1.sayhi();
 
-class person2 extends person{
-    super 
-}
+// class person2 extends person{
+//     constructor(name,age,hobby) {
+//         super(name,age)
+//         this.hobbyy = hobby;
+//     }
 
-let newp = new person2("nishav",18)
+//     hobby(){
+//         console.log(`hi my name is ${this.name} and my age is ${this.age} and my hobby is ${this.hobbyy}`)
+//     }
+// }
 
-newp.sayhi()
+// let newp = new person2("nishav",18,"coding")
+
+// newp.sayhi()
+// newp.hobby()
+
+//---------------------
