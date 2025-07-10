@@ -577,4 +577,9 @@ class gully extends cricket{
     }
 }
 
-let newcric = gull
+let newcric = new gully(10,"t10","random", "chath pe jaaye out");
+
+newcric.aboutme()
+newcric.gullyrule();
+
+console.log("hello")
