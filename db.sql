@@ -12,6 +12,9 @@ INSERT INTO detail
 (name,age,city,userid)
 VALUES
 ("Rohan",19,"pune",12),
-("Rohan",19,"pune",12),
-("Rohan",19,"pune",12),
-("Rohan",19,"pune",12),
+("mohan",23,"ranchi",13),
+("alex",49,"patna",14),
+("jhon",22,"pune",11);
+
+SELECT city,COUNT(name) FROM detail
+GROUP BY city;
