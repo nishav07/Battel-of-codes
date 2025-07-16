@@ -583,3 +583,31 @@ newcric.aboutme()
 newcric.gullyrule();
 
 console.log("hello")
+
+
+
+class parent {
+    constructor(name,age,behave){
+        this.name = name;
+        this.age = age;
+        this.behave = behave
+    }
+
+    sayhi(){
+        console.log(`hi, i'm ${this.name} and my age is about ${this.age} year old and my behaviour is ${this.behave}`)
+    }
+}
+
+class child extends parent{
+    constructor(name,age,behave,skill,degree){
+        super(name,age,behave)
+        this.skill = skill;
+        this.degree = degree;
+    }
+
+    aboutme(){
+        console.log()
+    }
+}
+
+
