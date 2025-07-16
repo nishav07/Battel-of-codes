@@ -586,7 +586,7 @@ console.log("hello")
 
 
 
-class parent {
+class parent{
     constructor(name,age,behave){
         this.name = name;
         this.age = age;
@@ -606,8 +606,8 @@ class child extends parent{
     }
 
     aboutme(){
-        console.log()
+        console.log(`hi, i'm ${this.name} and my age is about ${this.age} year old and my behaviour is ${this.behave} and i have a skill like ${this.skill} and degree in ${this.degree}`);
     }
 }
 
-
+let parentss = new parent;
