@@ -38,32 +38,49 @@
 //     await changecolor("red" , 2000);
 // }
 // changecolor2()
-let ul = document.getElementById("ul");
-let btn = document.getElementById("G").addEventListener("click" , () => {
-    coolors();
-})
+
+//----------------color pallet genrateor/------------------------------------------
+// let ul = document.getElementById("ul");
+// let btn = document.getElementById("G").addEventListener("click" , () => {
+//     coolors();
+// })
 
 
-async function coolors (){
-    try{
-    let inval = document.getElementById("input").value;
-    let url = `https://www.thecolorapi.com/scheme?hex=0047AB&mode=${inval}`;
-    const res =  await fetch(url);
-    const data = await res.json();
-    console.log(data.colors[0].hex.value);
-    let colorArr = data.colors;
-    console.log(colorArr)
-    colorArr.forEach(e => {
-        let li = document.createElement("li");
-        li.innerText = e.hex.value;
-        ul.appendChild(li);
-        console.log(e.hex.value)
-    });
+// async function coolors (){
+//     try{
+//     let inval = document.getElementById("input").value;
+//     let url = `https://www.thecolorapi.com/scheme?hex=0047AB&mode=${inval}`;
+//     const res =  await fetch(url);
+//     const data = await res.json();
+//     console.log(data.colors[0].hex.value);
+//     let colorArr = data.colors;
+//     console.log(colorArr)
+//     colorArr.forEach(e => {
+//         let li = document.createElement("li");
+//         li.innerText = e.hex.value;
+//         ul.appendChild(li);
+//         console.log(e.hex.value)
+//     });
 
-    } catch(err){
-        console.log(`err is ${err}`)
-    }
-}
+//     } catch(err){
+//         console.log(`err is ${err}`)
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
 
 
 // async function giveData(){
@@ -610,4 +627,6 @@ class child extends parent{
     }
 }
 
-let parentss = new parent;
+let parentss = new parent("nishav", 18,"happy");
+
+parentss.sayhi();
