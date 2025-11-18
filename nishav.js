@@ -630,3 +630,32 @@ class child extends parent{
 let parentss = new parent("nishav", 18,"happy");
 
 parentss.sayhi();
+
+
+
+//----------------------practice after exammmmmmmmmmm---------------------------------
+
+const arr = [1,2,3,2,4,1,5];
+
+const freq = {}
+
+for (let i = 0; i < arr.length; i++) {
+   
+    let num = arr[i];
+
+    if(freq[num] === undefined){
+        freq[num] = 1
+    } else {
+        freq[num]++
+    }
+}
+
+const result = [];
+
+for (let el in freq) {
+    if(freq[el] === 2){
+        result.push(Number(el));
+    }
+}
+
+console.log(result);
