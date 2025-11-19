@@ -635,27 +635,46 @@ parentss.sayhi();
 
 //----------------------practice after exammmmmmmmmmm---------------------------------
 
-const arr = [1,2,3,2,4,1,5];
+// const arr = [1,2,3,2,4,1,5];
 
-const freq = {}
+// const freq = {}
 
-for (let i = 0; i < arr.length; i++) {
+// for (let i = 0; i < arr.length; i++) {
    
-    let num = arr[i];
+//     let num = arr[i];
 
-    if(freq[num] === undefined){
-        freq[num] = 1
+//     if(freq[num] === undefined){
+//         freq[num] = 1
+//     } else {
+//         freq[num]++
+//     }
+// }
+
+// const result = [];
+
+// for (let el in freq) {
+//     if(freq[el] === 2){
+//         result.push(Number(el));
+//     }
+// }
+
+// console.log(result);
+//---------------------------------quetsion 2-------------------------------------------------------------------
+
+const str = "aeioumnpqr";
+
+const charList = "aeiou";
+
+let vowels = 0;
+let constants = 0;
+
+for (let i = 0 ; i < str.length; i++){
+    console.log(str[i]);
+    if(charList.includes(str[i])){
+        vowels++
     } else {
-        freq[num]++
+        constants++
     }
 }
 
-const result = [];
-
-for (let el in freq) {
-    if(freq[el] === 2){
-        result.push(Number(el));
-    }
-}
-
-console.log(result);
+console.log(vowels === constants);
