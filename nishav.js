@@ -661,20 +661,51 @@ parentss.sayhi();
 // console.log(result);
 //---------------------------------quetsion 2-------------------------------------------------------------------
 
-const str = "aeioumnpqr";
+// const str = "aeioumnpqr";
 
-const charList = "aeiou";
+// const charList = "aeiou";
 
-let vowels = 0;
-let constants = 0;
+// let vowels = 0;
+// let constants = 0;
 
-for (let i = 0 ; i < str.length; i++){
-    console.log(str[i]);
-    if(charList.includes(str[i])){
-        vowels++
-    } else {
-        constants++
+// for (let i = 0 ; i < str.length; i++){
+//     console.log(str[i]);
+//     if(charList.includes(str[i])){
+//         vowels++
+//     } else {
+//         constants++
+//     }
+// }
+
+// console.log(vowels === constants);
+
+//---------------------------------------------------question 3----------------------------------------------
+
+//Without using sort(), find the second largest element in an array.
+// const arr = [2,4,6,1,53,3]
+// const neww = arr.sort((a,b) => {
+//     return a - b
+// })
+
+// console.log(neww[4]);
+
+const arr = [2,4,6,1,53,3];
+
+const newArr = [];
+
+let largest = 0;
+let seclarge = 0;
+
+for (let i = 0 ; i < arr.length; i++){
+    const num = arr[i]
+    if(num > largest){
+        seclarge = largest;
+        largest = num;
+    }
+
+    if(num < largest && num > seclarge){
+        seclarge = num;
     }
 }
 
-console.log(vowels === constants);
+console.log(seclarge);
