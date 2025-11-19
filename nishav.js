@@ -681,7 +681,7 @@ parentss.sayhi();
 
 //---------------------------------------------------question 3----------------------------------------------
 
-//Without using sort(), find the second largest element in an array.
+// Without using sort(), find the second largest element in an array.
 // const arr = [2,4,6,1,53,3]
 // const neww = arr.sort((a,b) => {
 //     return a - b
@@ -689,23 +689,55 @@ parentss.sayhi();
 
 // console.log(neww[4]);
 
-const arr = [2,4,6,1,53,3];
+// const arr = [2,4,6,1,53,3];
 
-const newArr = [];
+// const newArr = [];
 
-let largest = 0;
-let seclarge = 0;
+// let largest = -Infinity;
+// let seclarge = -Infinity;
 
-for (let i = 0 ; i < arr.length; i++){
-    const num = arr[i]
-    if(num > largest){
-        seclarge = largest;
-        largest = num;
-    }
+// for (let i = 0 ; i < arr.length; i++){
+//     const num = arr[i]
+//     if(num > largest){
+//         seclarge = largest;
+//         largest = num;
+//     }
 
-    if(num < largest && num > seclarge){
-        seclarge = num;
+//     if(num < largest && num > seclarge){
+//         seclarge = num;
+//     }
+// }
+
+// console.log(seclarge);
+
+//----------------------------------------question 4 --------------------------------------------
+
+const str1 = "listen";
+const str2 = "silent";
+
+const freq1 = {};
+const freq2 = {};
+
+for (let i = 0; i < str1.length; i++) {
+    const el = str1[i];
+
+    if(freq1[el] === undefined){
+        freq1[el] = 1
+    } else {
+        freq1[el]++
     }
 }
 
-console.log(seclarge);
+for (let i = 0; i < str2.length; i++) {
+    const el = str2[i];
+
+    if(freq2[el] === undefined){
+        freq2[el] = 1
+    } else {
+        freq2[el]++
+    }
+}
+
+
+
+
