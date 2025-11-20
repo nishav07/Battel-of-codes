@@ -712,56 +712,107 @@ parentss.sayhi();
 
 //----------------------------------------question 4 --------------------------------------------
 
-const str1 = "listen";
-const str2 = "silent";
+// const str1 = "listen";
+// const str2 = "silent";
 
-const freq1 = {};
-const freq2 = {};
+// const freq1 = {};
+// const freq2 = {};
 
-for (let i = 0; i < str1.length; i++) {
-    const el = str1[i];
-    const el2 = str2[i];
+// for (let i = 0; i < str1.length; i++) {
+//     const el = str1[i];
+//     const el2 = str2[i];
 
-    if(freq1[el] === undefined){
-        freq1[el] = 1
-    } else {
-        freq1[el]++
-    }
+//     if(freq1[el] === undefined){
+//         freq1[el] = 1
+//     } else {
+//         freq1[el]++
+//     }
 
-    if(freq2[el2] === undefined){
-        freq2[el2] = 1
-    } else {
-        freq2[el2]++
-    }
-}
+//     if(freq2[el2] === undefined){
+//         freq2[el2] = 1
+//     } else {
+//         freq2[el2]++
+//     }
+// }
 
-console.log(freq1);
-const keys1 = Object.keys(freq1);
-const value1 = Object.values(freq1);
-const keys2 = Object.keys(freq2);
-const value2 = Object.values(freq2);
+// console.log(freq1);
+// const keys1 = Object.keys(freq1);
+// const value1 = Object.values(freq1);
+// const keys2 = Object.keys(freq2);
+// const value2 = Object.values(freq2);
 
-function check (){
-    if(keys1.length !== keys2.length){
-        return false
-    }
+// function check (){
+//     if(keys1.length !== keys2.length){
+//         return false
+//     }
 
-   for (const key in freq1) {
-   if(!keys2.includes(key)){
-    return false
-   }
-   if(freq1[key] !== freq2[key]){
-    return false
-   }
-   }
+//    for (const key in freq1) {
+//    if(!keys2.includes(key)){
+//     return false
+//    }
+//    if(freq1[key] !== freq2[key]){
+//     return false
+//    }
+//    }
 
-   return true
+//    return true
 
-}
+// }
 
-const result = check();
+// const result = check();
 
-console.log(result);
+// console.log(result);
 
 
 
+// const str1 = "triangle";
+// const str2 = "integral";
+
+// const freq1 = {};
+// const freq2 = {};
+
+// for(let i = 0; i < str1.length ; i++){
+
+//     let el = str1[i];
+//     let el2 = str2[i];
+//     if(freq1[el] === undefined){
+//         freq1[el] = 1;
+//     } else {
+//         freq1[el]++
+//     }
+
+//     if(freq2[el2] === undefined){
+//         freq2[el2] = 1;
+//     } else {
+//         freq2[el2]++
+//     }
+
+// }
+
+// const val1 = Object.values(freq1);
+// const val2 = Object.values(freq2);
+// const key1 = Object.keys(freq1);
+// const key2 = Object.keys(freq2);
+
+// function check(){
+//     if(str1.length !== str2.length){
+//         return false
+//     }
+
+//     for (const key in freq1) {
+//         if(!key2.includes(key)){
+//             return false
+//         }
+
+//         if(freq1[key] !== freq2[key]){
+//             return false
+//         }
+//     }
+
+//     return true
+// }
+
+
+// const res = check();
+
+// console.log(res)
