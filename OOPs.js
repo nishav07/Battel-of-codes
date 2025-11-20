@@ -1,0 +1,1 @@
+console.log(`this practice file is for OOPs babsed questions`);

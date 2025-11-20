@@ -504,7 +504,7 @@ let lang = ["python" , "javascript" ,"java" , "C++" ,"C" , "assembly" ,"go" , "r
 // console.log(summ)
 
 //////////////////////////OOPPPPPPPPSSS///////////////////////////////////////////////////////////////
-//old style factriy function
+//old style factrory function
 // function person(name,age){
 //     this.name = name;
 //     this.age = age;

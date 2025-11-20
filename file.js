@@ -8,6 +8,7 @@ async function showdata(fileName,Data) {
 }
 
 showdata("me.txt","kya haaal chaaal")
-showdata("index.js","console.log(`chutiya`)")
+showdata("index.js","console.log(`matlabi world`)")
+showdata("OOPs.js","console.log(`this practice file is for logical questions`)")
 
 
