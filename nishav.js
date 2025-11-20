@@ -720,24 +720,48 @@ const freq2 = {};
 
 for (let i = 0; i < str1.length; i++) {
     const el = str1[i];
+    const el2 = str2[i];
 
     if(freq1[el] === undefined){
         freq1[el] = 1
     } else {
         freq1[el]++
     }
-}
 
-for (let i = 0; i < str2.length; i++) {
-    const el = str2[i];
-
-    if(freq2[el] === undefined){
-        freq2[el] = 1
+    if(freq2[el2] === undefined){
+        freq2[el2] = 1
     } else {
-        freq2[el]++
+        freq2[el2]++
     }
 }
 
+console.log(freq1);
+const keys1 = Object.keys(freq1);
+const value1 = Object.values(freq1);
+const keys2 = Object.keys(freq2);
+const value2 = Object.values(freq2);
+
+function check (){
+    if(keys1.length !== keys2.length){
+        return false
+    }
+
+   for (const key in freq1) {
+   if(!keys2.includes(key)){
+    return false
+   }
+   if(freq1[key] !== freq2[key]){
+    return false
+   }
+   }
+
+   return true
+
+}
+
+const result = check();
+
+console.log(result);
 
 
 
