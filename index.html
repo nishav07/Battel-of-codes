@@ -7,12 +7,68 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <h1 id="h">Generate color pallet for free</h1>
-    <input type="text" id="input" >
-    <button id="G">Generate color pallet</button>
-    <ul id="ul"></ul> -->
+    <header>
+        <nav>
+            <h1>LOGO</h1>
+            <ul>
+                <a href="#"><li>Menu</li></a>
+                <a href="#"><li>login</li></a>
+                <a href="#"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div id="box">
+                <div class="mini1"></div>
+                <div class="mini2"></div>
+                <div id="btns">
+                    <button class="btn1">click me!!</button>
+                    <button class="btn2">click me too!!</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
 
-    <h1>HELLO WORLD</h1>
-    <script src="nishav.js"></script>
+    </footer>
+
+
+   <script>
+
+    class UI{
+        constructor(selector){
+            this.el = document.querySelector(el);
+        }
+        
+        setText(text){
+            this.el.innerText = text;
+        }
+
+        setHTML(html){
+            this.el.innerHTML = html;
+        }
+
+        setColor(color){
+            this.el.style.background = color;
+        }
+
+        show(){
+            this.el.style.display = "block";
+        }
+
+        hide(){
+            this.el.style.display = "none";
+        }
+
+        on(event, handler) {
+        this.el.addEventListener(event, handler);
+    }
+    }
+
+    const btn1 = new UI("#box1");
+
+
+   </script>
 </body>
 </html>
