@@ -80,7 +80,9 @@
 
     <script>
 
-        let btn = document.getElementById("find").addEventListener("click" , () => {
+        let btn = document.getElementById("find");
+        
+        btn.addEventListener("click" , () => {
             let inval = document.getElementById("input").value;
             if(inval === ""){
                 return
@@ -91,19 +93,17 @@
         })
 
 
-        async function findcolor(){
+        async function findcolor(val){
             try{
-                // let url;
-                let res = await fetch(`https://colormagic.app/api/palette/search?q=green`);
+                let res = await fetch(`https://colormagic.app/api/palette/search?q=${val}`);
                 let data = await res.json();
                 console.log(data);
-                
             } catch (err){
                 throw err;
             }
         }
 
-        findcolor();
+        // findcolor();
     </script>
 </body>
 </html>
